@@ -1,0 +1,25 @@
+#!/bin/bash
+
+i=0
+colors=(
+	"\e[0m"
+	"\e[0;31m"
+	"\e[0;32m"
+	"\e[0;33m"
+	"\e[0;34m"
+	"\e[0;35m"
+	"\e[0;36m"
+)
+color=${colors[$((RANDOM % 7))]}
+printf "$color"
+if [[ -z $1 ]]; then
+	str="Hello, world!"
+else
+	str=$1
+fi
+while [ $i -lt ${#str} ]; do
+printf "${str:$i:1}"
+i=$(($i+1))
+sleep 0.05
+done
+printf "\e[0m\n"

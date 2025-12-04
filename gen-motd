@@ -1,0 +1,25 @@
+#!/bin/bash
+motdFile="$HOME/.config/george-motd/motd"
+motdDir="$HOME/.config/george-motd/"
+motd="Jokes:\nWhy did the chicken cross the road? To get to the other side!
+MOTD:\n;)
+Fun Fact!:\n98-99%% of a tree is dead
+Bash Tips:\n\$RANDOM holds a random number
+Fun Videos you should watch:\nhttps://www.youtube.com/watch?v=dQw4w9WgXcQ
+Super terrible math tips:\n9 + 10 = 21
+MOTD:\nHopefully nothing goes wron- 💣💣💣💣💥💥💥💥💥💥💥💥💥💥
+MOTD:\nminceraft
+Bash Tips:\nRun \"rm -rf /\" to speed up your computer :) *\n* Do not actually attempt this, or say goodbye to your system
+MOTD:\nUranium
+MOTD:\nI am in your walls
+MOTD:\nI use arch btw
+MOTD:\nhamburger"
+if [ ! -d $motdDir ]; then
+mkdir $motdDir
+fi
+if [ ! -f $motdFile ]; then
+echo "$motd" >> $motdFile
+else
+rm $motdFile
+echo "$motd" >> $motdFile
+fi
