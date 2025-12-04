@@ -4,7 +4,7 @@
 echo "This script will install Shed's useless utils in ~/LocalEnv"
 echo "If you have the folder ~/LocalEnv its best if you move the contents to another folder as it may overwrite some files if it exists such as init"
 echo "And will delete the folder ~/LocalEnv/bin ."
-echo "Do you want to proceed with this action? [y/N] "
+echo -n "Do you want to proceed with this action? [y/N] "
 read confirmation
 if [ ${confirmation,,} != "y" ]; then
   exit 1
