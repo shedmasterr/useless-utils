@@ -34,10 +34,10 @@ $wgetfolder="$HOME/LocalEnv/bin"
 oldPWD=$PWD
 cd $wgetfolder
 echo "Downloading files please wait..."
-wget https://raw.githubusercontent.com/shedmasterr/useless-utils/refs/heads/main/bin/motd
-wget https://raw.githubusercontent.com/shedmasterr/useless-utils/refs/heads/main/bin/greeter
-wget https://raw.githubusercontent.com/shedmasterr/useless-utils/refs/heads/main/bin/gen-motd
-wget https://raw.githubusercontent.com/shedmasterr/useless-utils/refs/heads/main/bin/hello
+curl -o $wgetfolder "https://raw.githubusercontent.com/shedmasterr/useless-utils/refs/heads/main/bin/motd"
+curl -o $wgetfolder "https://raw.githubusercontent.com/shedmasterr/useless-utils/refs/heads/main/bin/greeter"
+curl -o $wgetfolder "https://raw.githubusercontent.com/shedmasterr/useless-utils/refs/heads/main/bin/gen-motd"
+curl -o $wgetfolder "https://raw.githubusercontent.com/shedmasterr/useless-utils/refs/heads/main/bin/hello"
 echo "Changing permission of files, please wait..."
 chmod +x $wgetfolder/motd
 chmod +x $wgetfolder/greeter
