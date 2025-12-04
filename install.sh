@@ -32,10 +32,10 @@ greeter"
 echo $initfile >> $HOME/LocalEnv/init
 $wgetfolder="$HOME/LocalEnv/bin"
 echo "Downloading files please wait..."
-wget -P $wgetfolder https://raw.githubusercontent.com/shedmasterr/useless-utils/refs/heads/main/bin/motd
-wget -P $wgetfolder https://raw.githubusercontent.com/shedmasterr/useless-utils/refs/heads/main/bin/greeter
-wget -P $wgetfolder https://raw.githubusercontent.com/shedmasterr/useless-utils/refs/heads/main/bin/gen-motd
-wget -P $wgetfolder https://raw.githubusercontent.com/shedmasterr/useless-utils/refs/heads/main/bin/hello
+wget --directory-prefix=$wgetfolder https://raw.githubusercontent.com/shedmasterr/useless-utils/refs/heads/main/bin/motd
+wget --directory-prefix=$wgetfolder https://raw.githubusercontent.com/shedmasterr/useless-utils/refs/heads/main/bin/greeter
+wget --directory-prefix=$wgetfolder https://raw.githubusercontent.com/shedmasterr/useless-utils/refs/heads/main/bin/gen-motd
+wget --directory-prefix=$wgetfolder https://raw.githubusercontent.com/shedmasterr/useless-utils/refs/heads/main/bin/hello
 echo "Changing permission of files, please wait..."
 chmod +x $wgetfolder/motd
 chmod +x $wgetfolder/greeter
