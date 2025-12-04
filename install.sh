@@ -30,7 +30,7 @@ $initfile="#!/bin/bash
 export PATH="${PATH}:$HOME/LocalEnv/bin"
 greeter"
 echo $initfile >> $HOME/LocalEnv/init
-$wgetfolder="$HOME/LocalEnv/bin"
+wgetfolder="$HOME/LocalEnv/bin"
 oldPWD=$PWD
 cd $wgetfolder
 echo "Downloading files please wait..."
