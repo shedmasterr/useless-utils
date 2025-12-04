@@ -29,7 +29,7 @@ mkdir $HOME/LocalEnv/bin
 initfile="#!/bin/bash
 export PATH="${PATH}:$HOME/LocalEnv/bin"
 greeter"
-echo $initfile >> $HOME/LocalEnv/init
+echo "$initfile" >> $HOME/LocalEnv/init
 wgetfolder="$HOME/LocalEnv/bin"
 oldPWD=$PWD
 cd $wgetfolder
