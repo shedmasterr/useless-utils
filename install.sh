@@ -26,7 +26,7 @@ if [ -d $HOME/LocalEnv/bin ]; then
   rm -rf $HOME/LocalEnv/bin
 fi
 mkdir $HOME/LocalEnv/bin
-$initfile="#!/bin/bash
+initfile="#!/bin/bash
 export PATH="${PATH}:$HOME/LocalEnv/bin"
 greeter"
 echo $initfile >> $HOME/LocalEnv/init
