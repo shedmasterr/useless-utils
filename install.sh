@@ -43,5 +43,6 @@ chmod +x $wgetfolder/motd
 chmod +x $wgetfolder/greeter
 chmod +x $wgetfolder/gen-motd
 chmod +x $wgetfolder/hello
+chmod +x $HOME/LocalEnv/init
 echo "Installation complete!"
 cd $oldPWD
