@@ -1,5 +1,6 @@
 ## INSTALLER FOR Shed's useless utils
 ## THIS SCRIPT DOES NOT HAVE TO BE RUN AS ROOT!
+## NOTE THIS ONLY INSTALLS THE PROGRAMS TO THE USER!
 
 echo "This script will install Shed's useless utils in ~/LocalEnv"
 echo "If you have the folder ~/LocalEnv its best if you move the contents to another folder as it may overwrite some files if it exists such as init"
