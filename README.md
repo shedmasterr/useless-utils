@@ -10,7 +10,7 @@ and voila!
 # Version latest
 The latest version (1.0.0)!
 
-see the readme of that branch for more details
+see the [readme](/shedmasterr/useless-utils/blob/v1.0.0/README.md) of that branch for more details
 
 # Version format
 Version format is: ```major.minor.hotfix```
