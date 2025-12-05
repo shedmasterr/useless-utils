@@ -6,9 +6,19 @@ You run
 then close and open your terminal or run
 ```source ~/.bashrc```
 and voila!
+
+# Version latest
+The latest version (1.0.0)!
+
+see the readme of that branch for more details
+
 # Version format
 Version format is: ```major.minor.hotfix```
+
 Major is for big changes that may or may not cause incompatibility, such as deprecating commands or command arguments.
+
 Minor is for small changes that does not cause incompatibility.
+
 Hotfix is for bugfixes.
+
 The branch "main" is the absolute latest version.
