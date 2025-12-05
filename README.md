@@ -14,3 +14,9 @@ And commands such as
 ```motd``` gives you a random message from the motd list
 
 ```hello``` prints ```Hello, World!``` to the terminal with an animation and a random color, you can use ```hello "<custom message>"``` for a custom message.
+# Installation
+You run
+```bash -c "$(curl https://raw.githubusercontent.com/shedmasterr/useless-utils/refs/heads/v1.0.0/install.sh)"```
+then close and open your terminal or run
+```source ~/.bashrc```
+and voila!
