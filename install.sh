@@ -10,8 +10,8 @@ if [ ${confirmation,,} != "y" ]; then
   exit 1
 fi
 echo "Please wait, preparing to install..."
-$FILE="~/.bashrc"
-$STRING="source \$HOME/LocalEnv/init"
+FILE="~/.bashrc"
+STRING="source \$HOME/LocalEnv/init"
 grep -q -F "$STRING" "$FILE" && initInBashrc=1 || initInBashrc=0
 
 if [ $initInBashrc -eq 0 ]; then
