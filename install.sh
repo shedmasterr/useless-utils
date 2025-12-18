@@ -16,6 +16,7 @@ STRING="source \$HOME/LocalEnv/init"
 grep -q -F "$STRING" "$FILE" && initInBashrc=1 || initInBashrc=0
 
 if [ $initInBashrc -eq 0 ]; then
+  echo "Init already exists. Not editing bashrc."
   echo "# THIS HAS TO BE IN THE END OF BASHRC FOR SHED'S USELESS UTILS TO WORK" >> $HOME/.bashrc
   echo "source \$HOME/LocalEnv/init" >> $HOME/.bashrc
 fi
