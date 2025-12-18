@@ -2,9 +2,9 @@
 ## THIS SCRIPT DOES NOT HAVE TO BE RUN AS ROOT!
 ## NOTE THIS ONLY INSTALLS THE PROGRAMS TO THE USER!
 
-$BRANCH="v1.0.1"
-$DLPREFIX="https://raw.githubusercontent.com/shedmasterr/useless-utils/refs/heads/${BRANCH}"
-$PREFIX="\$HOME/LocalEnv"
+BRANCH="v1.0.1"
+DLPREFIX="https://raw.githubusercontent.com/shedmasterr/useless-utils/refs/heads/${BRANCH}"
+PREFIX="\$HOME/LocalEnv"
 dl(){
 curl -o ${PREFIX}/${1} "${DLPREFIX}/${1}"
 chmod +x ${PREFIX}/${1}
