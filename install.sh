@@ -11,14 +11,14 @@ if [ ${confirmation,,} != "y" ]; then
   exit 1
 fi
 echo "Please wait, preparing to install..."
-FILE="~/.bashrc"
-STRING="source \$HOME/LocalEnv/init"
-grep -q -F "$STRING" "$FILE" && initInBashrc=1 || initInBashrc=0
+LINE="source \$HOME/LocalEnv/init"
+FILE="$HOME/.bashrc"
 
-if [ $initInBashrc -eq 0 ]; then
-  echo "# THIS HAS TO BE IN THE END OF BASHRC FOR SHED'S USELESS UTILS TO WORK" >> $HOME/.bashrc
-  echo "source \$HOME/LocalEnv/init" >> $HOME/.bashrc
-fi
+# Check if the line exists; if not, append it
+if ! grep -qF "$LINE" "$FILE"; then
+  echo "# THIS HAS TO BE IN THE END OF BASHRC FOR SHED'S USELESS UTILS TO WORK" >> "$FILE"
+  echo "$LINE" >> "$FILE"
+else
 if [ ! -d $HOME/LocalEnv ]; then
   mkdir $HOME/LocalEnv
 fi
