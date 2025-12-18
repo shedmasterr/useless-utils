@@ -4,7 +4,7 @@
 
 BRANCH="v1.0.1"
 DLPREFIX="https://raw.githubusercontent.com/shedmasterr/useless-utils/refs/heads/${BRANCH}"
-PREFIX="\$HOME/LocalEnv"
+PREFIX="$HOME/LocalEnv"
 dl(){
 curl -o ${PREFIX}/${1} "${DLPREFIX}/${1}"
 chmod +x ${PREFIX}/${1}
