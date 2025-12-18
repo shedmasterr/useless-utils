@@ -11,9 +11,8 @@ if [ ${confirmation,,} != "y" ]; then
   exit 1
 fi
 echo "Please wait, preparing to install..."
+LINE="source \$HOME/LocalEnv/init"
 FILE="$HOME/.bashrc"
-STRING="source \$HOME/LocalEnv/init"
-grep -q -F "$STRING" "$FILE" && initInBashrc=1 || initInBashrc=0
 
 if ! grep -qF "$LINE" "$FILE"; then
   echo "# THIS HAS TO BE IN THE END OF BASHRC FOR SHED'S USELESS UTILS TO WORK" >> "$FILE"
@@ -21,6 +20,7 @@ if ! grep -qF "$LINE" "$FILE"; then
 else
   echo "Init already exists. Not editing bashrc"
 fi
+
 if [ ! -d $HOME/LocalEnv ]; then
   mkdir $HOME/LocalEnv
 fi
